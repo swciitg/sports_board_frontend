@@ -10,3 +10,8 @@ export const API = axios.create({
 });
 
 export const fetchEventData = () => API.get(`eventdata?page=${id}`);
+export const fetchAllEventData = () => API.get(`alleventdata`);
+export const fetchHomePageData = () => API.get(`homepagedata`);
+export const fetchContactPageData = () => API.get(`contactinfo`);
+export const fetchClubData = () => API.get(`clubinfo?page=${id}`);
+export const fetchAllClubsData = () => API.get(`clubsdata`);

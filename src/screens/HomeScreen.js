@@ -1,11 +1,11 @@
 import React from "react";
 
-const HomeScreen = () => {
+const HomeScreen = () => { 
    return (
+    
         <>
             Home Screen
         </>
     );  
-
 }
 export default HomeScreen;
