@@ -11,12 +11,14 @@ import ContactScreen from "./screens/ContactScreen";
 function App() {
   return (
     <BrowserRouter basename={BASEURL}>
-        <Route path='/' element={<HomeScreen />} />
+      <Routes>
+      <Route path='/' element={<HomeScreen />} />
         <Route path='/clubs' element={< ClubsScreen/>} />
         <Route path='/events'element={<EventsScreen />} />
         <Route path='/contacts'element={<ContactScreen />} />
         <Route path={"/clubs/:id"} element={<ClubScreen  />} />
         <Route path={"/events/:id"} element={<EventScreen  />} />
+      </Routes>
       </BrowserRouter>
   );
 }
