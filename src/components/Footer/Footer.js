@@ -14,6 +14,7 @@ import copyRightImage from "../../Assests/Images/CopyRightImage.svg"
 
 const Footer = () =>
 {
+    const text = "blue";
     return (
         <div id="containerone"  className="flex flex-row gap-64 w-100% h-80 mt-0 pl-0 px-0" style={{position:'relative',zIndex:'1',backgroundColor: text}}>
             <div id="part1" className="flex flex-row ml-44 gap-x-6 ">
