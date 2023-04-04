@@ -1,10 +1,14 @@
 import React from "react";
+import HomeEvents from "../components/HomeEvents/HomeEvents";
+import Footer from "../components/Footer/Footer";
 
 const HomeScreen = () => { 
    return (
-    
-        <>
-            Home Screen
+        <>           
+            <div>
+                <HomeEvents></HomeEvents>
+                <Footer></Footer>
+            </div>
         </>
     );  
 }

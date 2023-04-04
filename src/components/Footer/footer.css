@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&display=swap');
+
+#img
+{
+    position: relative;
+    left: 5rem;
+}
+#imglast
+{
+    width: 20px;
+    height: 20px;
+}
+#part1
+{
+    margin-top: 5%;
+}
+#part2
+{
+    padding-top: 3.5%;
+}
+@media screen and (max-width:1228px) {
+    #img
+    {
+        left: 3rem;
+    }
+}
+@media screen and (max-width:1140px) {
+    #img
+    {
+        left: 1.5rem;
+    }
+}
+
+#containerone
+{
+
+  
+    width: 100%;
+  height: 410px;
+}
+
+.h1{
+ 
+    font-family: 'Fira Sans Extra Condensed';
+    
+    
+    }
+  
+   #head
+   {
+    font-family: 'Fira Sans Extra Condensed';
+    
+   } 
+
+   #one{
+ 
+    font-family: 'Familjen Grotesk';
+   }
+   #two
+   {
+    font-family: 'Familjen Grotesk';
+   }
+   #three
+   {
+    font-family: 'Familjen Grotesk';
+   }
+   #four
+   {
+    font-family: 'Familjen Grotesk';
+   }
+
+    
+    @media screen and (max-width:1054px) {
+        #part1
+        {
+            margin-left: 6rem;
+        }
+        #part2
+        {
+            position: absolute;
+            left: 36rem;
+        }
+    }
+    @media screen and (max-width:735px) {
+        #part1
+        {
+            margin-left: 4rem;
+        }
+        #part2
+        {
+            position: absolute;
+            left: 32rem;
+        }
+    }
+   
+   @media screen and (max-width:726px) {
+      #one
+      {
+          font-size: 12px;
+      } 
+      #two
+      {
+          font-size: 12px;
+      }
+      #three
+      {
+          font-size: 12px;
+      }
+      #four
+      {
+          font-size: 12px;
+      }
+      #img
+      {
+         width: 150px;
+         height: 150px;
+      }   
+      #img1
+       {
+          width: 25px;
+          height: 25px;
+       }
+       #head
+       {
+        font-size: 20px;
+       }
+     #part1
+     {
+        position: absolute;
+        left: -30px;
+     }
+     #part2
+     {
+        position: absolute;
+        left: 410px;
+     }
+      #part3
+      {
+        position: absolute;
+        left: 190px;
+      }
+       #small
+       {
+        position: absolute;
+        top: 160px;
+        left: 2px;
+       }
+      
+    #img3
+    {
+        width: 45px;
+        height: 45px;
+    }
+ 
+   }
+   @media screen and (max-width:558px) {
+       #img{
+        width: 120px;
+        height: 120px;
+        
+       }
+       #small
+       {
+        left: 35px;
+       }
+
+       #head
+       {
+        font-size: 24px;
+       }
+      #part1
+      {
+        margin-left: 20px;
+      }
+      /* #part2
+      {
+        margin-right: 500px;
+      } */
+      #imglast
+      {
+        visibility: hidden;
+      }
+      #part2
+      {
+        margin-left: -50px;
+        margin-top: 25px;
+      }
+      #small
+      {
+        margin-left: 5px;
+        margin-top: -10px;
+      }
+   }
+   @media screen and (max-width:504px) {
+    #part2
+    {
+        margin-top: 45px;
+        margin-left: -120px;
+    }
+    #part3
+    {
+        left: 170px;
+    }
+   }
+   @media screen and (max-width:427.2px) {
+    #four
+    {
+        margin-left: -20px;
+        font-size: 12px;
+        width: 90px;
+    }
+    #img
+    {
+        width: 100px;
+        height: 100px;
+       margin-left: -12px;
+    }
+    #head
+    {
+        font-size: 19px;
+    }
+    #para
+    {
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+    }
+    #last
+    {
+        margin-left: 25px;
+    }
+    #part3
+    {
+        left :140px
+    }
+  
+       #part2
+    {
+       
+        margin-left: -175px;
+    }
+   }
+   @media screen and (max-width:415px) {
+
+    #img
+    {
+        width:90px;
+        height: 90px;
+        
+
+    }
+    #head
+    {
+        font-size: 20px;
+    }
+    #small
+    {
+     left: 18px;
+    }
+    #part3
+    {
+        left :130px
+    }
+    #part2
+    {
+       
+        margin-left: -175px;
+    }
+    #four
+    {
+        margin-left: -30px;
+    }
+   }
+   @media screen and (max-width:458px) {
+    #img
+    {
+        left: 3.5rem;
+    }
+   }
+ 
+   @media screen and (max-width:390px) {
+    /* #assam::before
+    {
+        content: "\a";
+        white-space: pre;
+    } */
+  
+    #content-four::before
+    {
+        content: "\a";
+        white-space: pre;
+    }
+    #img{
+       width:90.42px;
+       height: 90px;
+       left: 6rem;
+       top: 1.7rem;
+     
+    }
+    #head
+    {
+        font-size: 27px;
+    }
+    #heading
+    {
+        margin-top: 25px;
+        margin-left: 50px;
+    }
+    #small
+    {
+        margin-top: 30px;
+        margin-left: 36px;
+    }
+   #img1
+   {
+    width: 45.25px;
+    height: 45.25px;
+   }
+   #img3
+   {
+    width: 43px;
+    height: 46px;
+   
+   
+   }
+   .heading
+   {
+    flex-direction: column;
+   }
+ 
+   #small
+   {
+    position: absolute;
+    width: 110px;
+   top: 90px;
+   left: 35px;
+   }
+  
+   #containerone
+   {
+    width: 100%;
+    height: 400px;
+   
+   }
+   #one
+   {
+    font-size: 12px;
+    position: absolute;
+    top: 190px;
+    left: -110px;
+    
+   }
+   #two
+   {
+    font-size: 12px;
+    position: absolute;
+    top: 250px;
+    left: -110px;
+  
+   }
+    #part2
+    {
+        position: absolute;
+        width: 90px;
+        top: 85px;
+    }
+   #imglast
+   {
+    visibility: hidden;
+   }
+
+   #one
+   {
+    position: absolute;
+       
+   }
+   #img3
+   {
+    position: absolute;
+    top: 25px;
+   }
+   #last
+   {
+    margin-left: -10px;
+   }
+    #four
+    {
+        margin-left: 2px;
+        font-size: 12px;
+       position: absolute;
+       left: -50px;
+       width: 50px;
+       top: 80px;
+
+    }
+    #three
+    {
+        font-size: 12px;
+        position: absolute;
+        /* top: 10px;
+        left: 40px; */
+        top: 80px;
+        height: 10px;
+       
+    }
+   }
+  @media screen and (max-width:343px) {
+    #one
+    {
+        width: 90px;
+    }
+    #two
+    {
+        top:  280px;
+    }
+    #four
+    {
+        margin-left: -40px;
+    }
+    #img3
+    {
+        margin-left: -40px;
+    }
+    #three
+    {
+        margin-left: -40px;
+        width: 50px;
+    }
+    #last
+    {
+        width: 35px;
+    }
+    #para
+    {
+        width: 35px;
+    }
+    #part2
+    {
+        width: 35px;
+    }
+  }
+  @media screen and (max-width:315px) {
+    #img
+    {
+        margin-left: -40px;
+        width: 90px;
+    }
+    #small
+    {
+        margin-left: -0px;
+    }
+    #heading
+    {
+        margin-left: 10px;
+    }
+  }
+  @media screen and (max-width:300px) {
+    #four
+    {
+        margin-left: -60px;
+    }
+    #img3
+    {
+        margin-left: -70px;
+    }
+    #three
+    {
+
+        margin-left: -70px;
+    }
+  }
+  @media screen and (max-width:288px) {
+    #part2{
+        margin-left: -188px;
+    }
+    #img3
+    {
+        width: 35px;
+    }
+  }
