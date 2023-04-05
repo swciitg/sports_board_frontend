@@ -3,7 +3,6 @@ import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
 import image1 from "../../Assests/Images/hm.png"
 import image2 from "../../Assests/Images/fullHori.svg"
 import image3 from "../../Assests/Images/hm.png"
-import { NavLink } from "react-router-dom";
 import "./Carousal.css"
 import { BASEAPIURL } from '../../constants';
 export const Carousal = (props) => {
@@ -37,7 +36,6 @@ export const Carousal = (props) => {
 console.log(data)
   return (
     <div className="">
-        {/* <h2 id="autoplay-example-heading">Autoplay</h2> */}
         <div>
           <Splide
           options={ options }
@@ -47,14 +45,40 @@ console.log(data)
           <div style={ { position: 'sticky'} }>
             <SplideTrack>
             { data.map( slide => (
-              <SplideSlide key={ slide.image } >
+              <SplideSlide key={ slide.key } >
                 <img src={ slide.image }/>
               </SplideSlide>
             ) ) }
             </SplideTrack>
-            </div>
+          </div>
           </Splide>
         </div>
       </div>
     );
   };
+
+  // console.log(props.images)
+  // return (
+  //   <div className="">
+  //       {/* <h2 id="autoplay-example-heading">Autoplay</h2> */}
+  //       <div>
+  //         <Splide
+  //         options={ options }
+  //         aria-labelledby="autoplay-example-heading"
+  //         hasTrack={ false }
+  //         >
+  //         <div style={ { position: 'sticky'} }>
+  //           <SplideTrack>
+  //             { props.images.map( img => {
+  //               <SplideSlide key={img.id}> 
+  //               <img src={BACKEND_URL+img.url} style={{height: '100vh',width: '100vw'}}/> 
+  //               </SplideSlide>
+  //               }) 
+  //             }
+  //           </SplideTrack>
+  //           </div>
+  //         </Splide>
+  //       </div>
+  //     </div>
+  //   );
+  // };

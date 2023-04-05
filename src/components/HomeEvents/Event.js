@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "../Image";
-import { BASEAPIURL } from "../../constants";
+import { BACKEND_URL, BASEAPIURL } from "../../constants";
 
 const Event = ({event, id}) =>
 {
@@ -24,7 +24,7 @@ const Event = ({event, id}) =>
                         <hr/>
                     </div>
                     <div className="img-two"> 
-                        <Image name={props.event.Event_Name} image_url = {BASEAPIURL+props.event.Thumbnail_Image.formats.thumbnail.url}></Image>
+                        <Image name={props.event.Event_Name} image_url = {BACKEND_URL+props.event.Thumbnail_Image.formats.thumbnail.url}></Image>
                     </div> 
                 </div> 
         </>

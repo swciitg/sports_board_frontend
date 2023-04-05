@@ -34,7 +34,7 @@ const Navbar = (props) => {
                 <a className="inactive" href="#"> SPORTS BOARD</a>
                 <a className="inn" href="#">IIT GUWAHATI </a>
               </div>
-                <div className="navurlsdesk">
+              <div className="navurlsdesk">
                 <NavLink to="/contacts" style={activeNavlinkStyle}>Contacts</NavLink>
                 <NavLink to="/clubs" style={activeNavlinkStyle}>Clubs</NavLink>
                 <NavLink to="/events" style={activeNavlinkStyle}>Events</NavLink>
@@ -59,30 +59,28 @@ const Navbar = (props) => {
                     <h>  <GiHamburgerMenu /></h>
                 </div>
 
-            <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
-              <div  className="dropdown-content">
-                <NavLink  to="/"   style={isActive => ({
-                  color: isActive ? "black" : "green"})}> Home </NavLink>
-                <NavLink to="/events" style={isActive => ({
-                  color: isActive ? "black" : "green"})}>Events</NavLink>
-                <NavLink to="/clubs" style={isActive => ({
-                  color: isActive ? "black" : "green"})}>Clubs</NavLink>
-                <NavLink to="/contacts" style={isActive => ({
-                  color: isActive ? "black" : "green"})}>Contacts</NavLink>
-                </div>
+                <div className={`dropdown-menu ${open ? 'active': 'inactive'}`}>
+                  <div  className="dropdown-content">
+                      <NavLink  to="/"   style={isActive => ({
+                        color: isActive ? "black" : "green"})}> Home </NavLink>
+                      <NavLink to="/events" style={isActive => ({
+                        color: isActive ? "black" : "green"})}>Events</NavLink>
+                      <NavLink to="/clubs" style={isActive => ({
+                        color: isActive ? "black" : "green"})}>Clubs</NavLink>
+                      <NavLink to="/contacts" style={isActive => ({
+                        color: isActive ? "black" : "green"})}>Contacts</NavLink>
+                   </div>
+                 </div>
+                </div> 
             </div>
-        </div>
-             
-        </div>
           </div>
           <div className="bodys"> 
-           <div className="bodyss"> <span> {props.name}</span></div>
-           <div className="bodysss">{props.slogan}</div>         
+            <div className="bodyss"> <span> {props.name}</span></div>
+            <div className="bodysss">{props.slogan}</div>         
           </div>
           <div className="last">
             <div className="div_image"></div>
           </div>
-       
     </div>
   )
 }
