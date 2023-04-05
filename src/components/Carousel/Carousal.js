@@ -32,24 +32,19 @@ export const Carousal = (props) => {
     },
   ]
   
-console.log(data)
   return (
     <div className="">
         <div>
-          <Splide
-          options={ options }
-          aria-labelledby="autoplay-example-heading"
-          hasTrack={ false }
-          >
-          <div style={ { position: 'sticky'} }>
-            <SplideTrack>
-            { data.map( slide => (
-              <SplideSlide key={ slide.key } >
-                <img src={ slide.image }/>
-              </SplideSlide>
-            ) ) }
-            </SplideTrack>
-          </div>
+          <Splide options={options} aria-labelledby="autoplay-example-heading" hasTrack={ false }>
+            <div style={ { position: 'sticky'} }>
+                <SplideTrack>
+                  {data.map(slide =>(
+                    <SplideSlide key={ slide.key }>
+                      <img src={ slide.image }/>
+                    </SplideSlide>
+                  ))}
+                </SplideTrack>
+            </div>
           </Splide>
         </div>
       </div>

@@ -51,13 +51,13 @@
   height: 24vh;
 }
 
-.eve-div1:hover .img-two {
+/* .img-two:hover{
   visibility: visible;
   transition: cubic-bezier(.04, .74, .83, .67);
   animation-name: moveUp;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+} */
 
 .img-three {
   position: absolute;
