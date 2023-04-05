@@ -4,8 +4,7 @@ import image1 from "../../Assests/Images/hm.png"
 import image2 from "../../Assests/Images/fullHori.svg"
 import image3 from "../../Assests/Images/hm.png"
 import "./Carousal.css"
-
-export const Carousal = () => {
+export const Carousal = (props) => {
   const options = {
     type         : 'loop',
     gap          : '1rem',
