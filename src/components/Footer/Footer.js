@@ -1,12 +1,12 @@
 import React from "react";
 import "./footer.css";
-import gymkhanalogo from "../../Assests/Images/footer.png"
-import youTubelogo from "../../Assests/Images/icona.png"
-import twitterlogo from "../../Assests/Images/iconb.png"
-import instalogo from "../../Assests/Images/iconc.png"
-import linkedInlogo from "../../Assests/Images/icond.png"
-import SWCLogo from "../../Assests/Images/swc_logo.png"
-import copyRightImage from "../../Assests/Images/CopyRightImage.svg"
+import gymkhanalogo from "../../assets/Images/footer.png"
+import youTubelogo from "../../assets/Images/icona.png"
+import twitterlogo from "../../assets/Images/iconb.png"
+import instalogo from "../../assets/Images/iconc.png"
+import linkedInlogo from "../../assets/Images/icond.png"
+import SWCLogo from "../../assets/Images/swc_logo.png"
+import copyRightImage from "../../assets/Images/CopyRightImage.svg"
 
 
 const Footer = (props) =>
