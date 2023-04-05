@@ -7,6 +7,7 @@ const HomeScreen = () => {
         <>           
             <div>
                 <HomeEvents></HomeEvents>
+                <hr/>
                 <Footer></Footer>
             </div>
         </>
