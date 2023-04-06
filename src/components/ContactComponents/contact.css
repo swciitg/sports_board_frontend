@@ -1,0 +1,128 @@
+.Overall_Contact{ 
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  width:auto;
+  height:100vh;
+  position: sticky;
+  top:0;
+  display: flex;
+}
+.Contact_block{
+  position: relative;
+  left: 8vw;
+  display: flex;
+}
+.main_chair 
+{
+  display: flex;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_image{
+  height: 60vh;
+  width: 40vw;
+}
+.flexing{
+  position: relative;
+    top: 18vh;
+    width:40vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6vw;
+}
+
+.para{
+border-radius: 1vh;
+padding: 1vh;
+font-family: 'Familjen Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 3vh;
+line-height: 160%;
+/* or 38px */
+
+
+color: #565656;
+
+}
+.heading
+{
+  font-family: 'Fira Sans Extra Condensed';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 7vh;
+  line-height: 123%;
+  text-transform: uppercase;
+  color: #000000;
+}
+.union_footer{
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-width:0px;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  column-gap: 6vw;
+  position: relative;
+  bottom: -16vh;
+}
+.ico{
+  align-items: flex-start;
+  margin-left: 15%;
+ 
+}
+
+.smOverallContact{
+  background-repeat: no-repeat;
+  background-color: #f4f4f4;
+  width:auto;
+  height:100vh;
+  position: sticky;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5vh;
+}
+@media screen and (min-width: 768px ){
+  .smOverallContact{
+    display: none
+    ;
+  }
+}
+@media screen and (max-width: 768px ){
+  .Overall_Contact{
+    display: none;
+  }
+  .heading{
+    text-align: center;
+    font-size: 8vw;
+  }
+  .main_image{
+    height: 40vh;
+    width: 40vh;
+  }
+  .image_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .para{
+    font-size: 4vw;
+  }
+  .desc{
+    display:flex;
+    justify-content: center
+  }
+  .icons{
+    justify-content: center;
+    bottom: -12vh;
+  }
+  .slogan{
+    padding-top: 2vh;
+  }
+
+}
