@@ -4,11 +4,11 @@ import { GrMail } from "react-icons/gr";
 import { IoMdCall } from "react-icons/io";
 import "./contact.css"
 import { BACKEND_URL } from '../../constants';
-const ContactComp1 = (props)=>{
+const ContactComp2 = (props)=>{
     return(
         <>
-        <div className='Overall_Contact'>
-                <div className='Contact_block'>
+        <div className='Overall_ContactBlue'>
+                <div className='Contact_blockBlue'>
                     <div className='main_chair' >
                         <div className='image_container'>
                         <img className='main_image' src={BACKEND_URL+props.info.Image.url} alt=""/>
@@ -29,7 +29,7 @@ const ContactComp1 = (props)=>{
                     </div>
                     </div>
             </div>
-            <div className="smOverallContact">
+            <div className="smOverallContactBlue">
                     <div className="smContactBlock" >
                         <div className='heading'>
                                     <p style={{margin:"10px"}}>{props.info.Position_Name}</p>
@@ -62,4 +62,4 @@ const ContactComp1 = (props)=>{
         </>
  );
 }
-export default ContactComp1;
+export default ContactComp2;

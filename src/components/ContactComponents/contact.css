@@ -1,4 +1,4 @@
-.Overall_Contact{ 
+.Overall_Contact,.Overall_ContactBlue{ 
   background-repeat: no-repeat;
   background-color: #f4f4f4;
   width:auto;
@@ -7,10 +7,16 @@
   top:0;
   display: flex;
 }
-.Contact_block{
+.Overall_ContactBlue{
+  background-color: #7BB9C4;
+}
+.Contact_block,.Contact_blockBlue{
   position: relative;
   left: 8vw;
   display: flex;
+}
+.Contact_blockBlue{
+  flex-direction: row-reverse;
 }
 .main_chair 
 {
@@ -75,7 +81,7 @@ color: #565656;
  
 }
 
-.smOverallContact{
+.smOverallContact,.smOverallContactBlue{
   background-repeat: no-repeat;
   background-color: #f4f4f4;
   width:auto;
@@ -86,14 +92,17 @@ color: #565656;
   flex-direction: column;
   padding-top: 5vh;
 }
+.smOverallContactBlue{
+  background-color: #7BB9C4;
+}
 @media screen and (min-width: 768px ){
-  .smOverallContact{
+  .smOverallContact,.smOverallContactBlue{
     display: none
     ;
   }
 }
 @media screen and (max-width: 768px ){
-  .Overall_Contact{
+  .Overall_Contact,.Overall_ContactBlue{
     display: none;
   }
   .heading{
