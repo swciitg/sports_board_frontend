@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import gymkhanalogo from "../../assets/Images/footer.png"
+import gymkhanalogo from "../../assets/Footer/footer.png"
 import youTubelogo from "../../assets/Footer/YoutubeLogo.png"
 import twitterlogo from "../../assets/Footer/TwitterLogo.png"
 import instalogo from "../../assets/Footer/InstagramLogo.png"
