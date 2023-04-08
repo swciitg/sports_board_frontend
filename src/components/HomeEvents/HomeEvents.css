@@ -157,20 +157,20 @@
   color: black;
   width: 100%;
 }
-.image {
+.image1 {
   display: none;
 }
 
-.image img {
+.image1 img {
   height: 34vh;
   aspect-ratio: 2/2;
 }
 
-.event:focus .image {
+.event:focus .image1 {
   display: flex;
 }
 
-.event:hover .image {
+.event:hover .image1 {
   display: flex;
 }
 
@@ -182,7 +182,7 @@
 
 
 @media screen and (max-width:1000px) {
-  .image img {
+  .image1 img {
     height: 40vw;
 
   }
