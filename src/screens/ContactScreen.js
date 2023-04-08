@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import { fetchContactPageData } from "../api";
 import Navbar from "../components/Navbar/navbar";
 import Loader from "../components/Loader/Loader";
-import ContactComp1 from "../components/ContactComponents/contact";
+import ContactComp1 from "../components/ContactComponents/ContactChairman";
 import Footer from "../components/Footer/Footer";
-import ContactComp2 from "../components/ContactComponents/contactBlue";
+import ContactComp2 from "../components/ContactComponents/ContactGs";
 const ContactScreen = () => {
     const [ data, setData]=useState([]);
     const [isLoaded, setLoad] = useState(false);
