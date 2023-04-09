@@ -47,8 +47,8 @@ const MediaComponent = (props)=>{
                     </div>
             </div>
         </div>
-        <div className="smoverallcontainer_team">
-            <div className="smteam_block" >
+        <div className="smMedia_blockoverall">
+            <div className="smMedia_block" >
                 <div className="head_about max-sm:text-6xl">{props.name}</div>
                 <div>
                     <p className="para_about">

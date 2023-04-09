@@ -206,7 +206,7 @@
     }
     
   }
-.smteam_block{
+.smMedia_block{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -223,7 +223,7 @@
     color: #565656;
   }
   
-  .smoverallcontainer_team{
+  .smMedia_blockoverall{
     background-color: #7BB9C4;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,14 +240,13 @@
     padding-left: 10%;
     padding-top: 7%;
     padding-bottom: 7%;
-    display: none;
   }
   .smgrid:hover{
     cursor:crosshair;
   }
   @media screen and (min-width: 950px ){
-    .smoverallcontainer_team{
-      display: none;
+    .smMedia_blockoverall{
+      display: none
     }
     .max-pd{
       padding-left: 24px;

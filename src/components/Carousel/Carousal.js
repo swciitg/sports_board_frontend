@@ -1,8 +1,6 @@
 import React from 'react';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
-import image1 from "../../assets/Images/hm.png"
-import image2 from "../../assets/Images/fullHori.svg"
-import image3 from "../../assets/Images/hm.png"
+import { BACKEND_URL } from '../../constants';
 import "./Carousal.css"
 export const Carousal = (props) => {
   const options = {
@@ -16,34 +14,30 @@ export const Carousal = (props) => {
     arrows       :  false,
     pagination   : true,
   };
-
-  const data = [
+  const def= [
     {
-      image: image1,
-      key:"1"
-    },
-    {
-      image: image2,
-      key:"2"
-    },
-    {
-      image: image3,
-      key:"3"
-    },
-  ]
-  
+      "id": 13,
+      "url": "/uploads/ath_slide1_7d8cd3b190.jpg",
+    },]
+  const images=props.images?props.images:def;
+console.log(images)
   return (
     <div className="">
         <div>
-          <Splide options={options} aria-labelledby="autoplay-example-heading" hasTrack={ false }>
-            <div style={ { position: 'sticky'} }>
-                <SplideTrack>
-                  {data.map(slide =>(
-                    <SplideSlide key={ slide.key }>
-                      <img src={ slide.image }/>
-                    </SplideSlide>
-                  ))}
-                </SplideTrack>
+          <Splide
+          options={ options }
+          aria-labelledby="autoplay-example-heading"
+          hasTrack={ false }
+          >
+          <div style={ { position: 'sticky'} }>
+            <SplideTrack>
+              { images.map( img => {
+                return <SplideSlide key={img.id}> 
+                <img src={BACKEND_URL+img.url} style={{height: '100vh',width: '100vw'}}/> 
+                </SplideSlide>
+                }) 
+              }
+            </SplideTrack>
             </div>
           </Splide>
         </div>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Inter&display=swap');
+
+.sports-event {
+  /* overflow-x: hidden; */
+  background-color: #7BB9C4;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+
+.event {
+  display: flex;
+
+  width: 100%;
+}
+
+.sports-event-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+#event-number-counter {
+  margin-bottom: auto;
+  height: 2.85vw;
+  width: 10vw;
+  overflow: hidden;
+}
+
+.digits {
+  float: left;
+  list-style-type: none;
+  font-size: 3.0vw;
+  line-height: 1em;
+  font-weight: 800;
+  margin-top: 0em;
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+#event-number-counter:hover .digits {
+  animation-name: anim;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.event-name {
+  font-family: 'Fira Sans Extra Condensed';
+  font-size: 5.5vw;
+  font-weight: 600;
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(0)
+  }
+
+  to {
+    transform: translateY(-50px)
+  }
+}
+
+@keyframes animout {
+  from {
+    transform: translateY(-50px)
+  }
+
+  to {
+    transform: translateY(0)
+  }
+
+}
+
+@media screen and (max-width:1010px) {
+  .event-name {
+    font-size: 8.5vw;
+  }
+
+  .digits {
+    font-size: 4.5vw;
+  }
+
+  #event-number-counter {
+    height: 4.5vw;
+  }
+}
+
+@media screen and (max-width:470px) {
+
+
+  .event-name {
+    font-size: 11.5vw;
+  }
+
+  #event-number-counter {
+    height: 6.5vw;
+  }
+
+  .digits {
+    font-size: 6.75vw;
+  }
+}
+.event-name-image {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+
+}
+.event-name {
+  cursor: pointer;
+}
+.event {
+  cursor: pointer;
+}
+.event-image2,
+.event-image3 {
+  position: absolute;
+  transform: translate(44vw, -3vh);
+
+}
+
+.event-image1 {
+  position: absolute;
+  transform: translate(44vw, 0vh);
+}
+
+.event-image4 {
+  position: absolute;
+  transform: translate(44vw, -20vh);
+}
+@media screen and (max-width:1000px) {
+  .event-image2,
+  .event-image1,
+  .event-image3 {
+    transform: translate(42vw, -3vh);
+  }
+
+  .event-image4 {
+    transform: translate(42vw, -6vh);
+  }
+}
+.new-line {
+  color: black;
+  width: 100%;
+}
+.image1 {
+  display: none;
+}
+
+.image1 img {
+  height: 34vh;
+  aspect-ratio: 2/2;
+}
+
+.event:focus .image1 {
+  display: flex;
+}
+
+.event:hover .image1 {
+  display: flex;
+}
+
+.image-font {
+  font-size: 3vw;
+  margin-top: 1vh;
+  margin-left: 3vh;
+}
+
+
+@media screen and (max-width:1000px) {
+  .image1 img {
+    height: 40vw;
+
+  }
+
+  .image-font {
+    font-size: 4vw;
+
+  }
+
+}
