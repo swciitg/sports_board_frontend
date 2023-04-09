@@ -22,7 +22,7 @@ const ClubpageComp2 = (props) => {
                 <div className="smcnrg_block">
                 <div className="head_about text-6xl max-sm:text-3xl">{props.name}</div>
                     <div style={{display:'flex',justifyContent:'center'}}>
-                        <img src={BACKEND_URL+props.media} className="gridimg" alt="" />
+                        <img src={BACKEND_URL+props.media} className="img1" alt="" />
                     </div>
                     <div className="flex flex-col pr-6">
                         <p className="para_about">
