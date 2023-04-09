@@ -26,10 +26,6 @@ const HomeScreen = () => {
             .catch(setLoad(false))
     }, [])
 
-    console.log(
-        data.Component
-    );
-
     return ( isLoaded ?
         <div>
             <Navbar 
@@ -44,7 +40,7 @@ const HomeScreen = () => {
                 media = {item.Component_Image.url}
             />)}
             <HomeEvents 
-                info={eventData}
+                data={eventData}
             />
             {data.Media_Component.map((item) =>
             <MediaComponent 

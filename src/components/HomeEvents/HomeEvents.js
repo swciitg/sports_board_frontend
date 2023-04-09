@@ -5,11 +5,10 @@ import { fetchAllEventData } from '../../api/index.js'
 import Event from "./Event.js";
 
 
-const HomeEvents = ({info}) => {
+const HomeEvents = ({data}) => {
 
     return (
-        isLoaded ?
-            (<div className="sports-event">
+            <div className="sports-event">
                 <div className="sports-event-detail">
                     <Event event={data[0]} id={1}></Event>
                 </div>
@@ -22,8 +21,7 @@ const HomeEvents = ({info}) => {
                 <div className="sports-event-detail" >
                     <Event event={data[3]} id={4}></Event>
                 </div>
-            </div>)
-            : <></>
+            </div>
 
 
     );

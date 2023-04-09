@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import { BACKEND_URL } from "../../constants";
 import Marquee from "react-marquee-slider";
 import "./MediaComponent.css"
+
+
 const MediaComponent = (props)=>{
     const ref1 = useRef();
     const {pathname}=useLocation();
@@ -22,7 +24,7 @@ const MediaComponent = (props)=>{
                             <div className="containerteam2">
                                 <div className="head_about">{props.name}</div>
                                 <p className="para_about">
-                                {props.desc}
+                                    {props.desc}
                                 </p>
                                 <div className="firm-btn" ref={ref1}>
                                     <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
@@ -71,4 +73,5 @@ const MediaComponent = (props)=>{
     )
 
 }
+
 export default MediaComponent;
