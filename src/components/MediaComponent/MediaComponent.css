@@ -235,6 +235,9 @@
       display: flex;
    z-index: 1;
   }
+  .hidden{
+    display: none;
+  }
   
   .smfirm-btn{
     padding-left: 10%;

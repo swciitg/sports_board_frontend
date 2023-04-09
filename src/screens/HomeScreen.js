@@ -27,10 +27,6 @@ const HomeScreen = () => {
             .catch(setLoad(false))
     }, [])
 
-    console.log(
-        data.Component
-    );
-
     return ( isLoaded ?
         <div>
             <Navbar 
@@ -39,14 +35,14 @@ const HomeScreen = () => {
                 carousel ={data.carousel}
             />
             {data.Component.map((item) => 
-            <ClubpageComp2 
+            <AboutUS
                 name = {item.Component_name} 
                 desc = {item.Component_data} 
                 media = {item.Component_Image.url}
             />)}
-            {/* <HomeEvents 
-                info={eventData}
-            /> */}
+            <HomeEvents 
+                data={eventData}
+            />
             {data.Media_Component.map((item) =>
             <MediaComponent 
                 name={item.Component_name} 

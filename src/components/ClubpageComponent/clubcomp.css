@@ -10,6 +10,19 @@
     background-color: #7BB9C4;
     scroll-snap-type: y mandatory;
   }
+  .crng_block {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 2%;
+    font-family: 'Familjen Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #565656;
+}
   .head_about{
     color: black ;
     font-weight: bolder;

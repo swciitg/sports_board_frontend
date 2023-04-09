@@ -18,8 +18,8 @@ const Footer = (props) =>
     else color = "#f4f4f4";
 
     return (
-        <div id="footer-container"  className="flex flex-row   " style={{backgroundColor: color}}>
-            <div id="students-ghymkhana-council" className="flex ">
+        <div id="footer-container"  className="flex flex-row" style={{backgroundColor: color}}>
+            <div id="students-ghymkhana-council" className="flex">
                 <div className="ghymkhana-logo "><img  src={gymkhanalogo} alt=""/></div>
                 <div className="flex flex-col flex-wrap items-start justify-start">
                     <div className="ghymkhana-details flex flex-col flex-wrap items-start justify-start gap-1  ">

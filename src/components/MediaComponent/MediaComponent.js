@@ -3,17 +3,24 @@ import { useLocation } from "react-router-dom";
 import { BACKEND_URL } from "../../constants";
 import Marquee from "react-marquee-slider";
 import "./MediaComponent.css"
+
+
 const MediaComponent = (props)=>{
     const ref1 = useRef();
+    const ref = useRef();
     const {pathname}=useLocation();
     useEffect(()=>{
-      if(pathname==="/"||pathname==="/stud/gymkhana/sports"){
-        ref1.current.style.display='relative';
+      if(pathname==="/"){
+        
+        ref1.current.className='smfirm-btn';
+        ref.current.className='firm-btn';
       }
       else{
-        ref1.current.style.display='none';
+        ref1.current.className='hidden';
+        ref.current.className='hidden'
       }
-    })
+    },[])
+    console.log(pathname)
     return(
      <>
         <div className="Media_blockoverall">
@@ -22,9 +29,9 @@ const MediaComponent = (props)=>{
                             <div className="containerteam2">
                                 <div className="head_about">{props.name}</div>
                                 <p className="para_about">
-                                {props.desc}
+                                    {props.desc}
                                 </p>
-                                <div className="firm-btn" ref={ref1}>
+                                <div className="firm-btn" ref={ref}>
                                     <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
                                 </div>
                             </div>
@@ -71,4 +78,5 @@ const MediaComponent = (props)=>{
     )
 
 }
+
 export default MediaComponent;
