@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Inter&display=swap');
+
+.new-block {
+  overflow-x: hidden;
+  background-color: #7BB9C4;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
+
+.another {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-one {
+  position: absolute;
+  visibility: hidden;
+  top: 2px;
+  right: 120px;
+  width: 24vw;
+  height: 24vh;
+}
+
+.eve-div:hover .img-one {
+  visibility: visible;
+  transition: cubic-bezier(.04, .74, .83, .67);
+  animation-name: moveUp;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.img-two {
+  position: relative;
+  visibility: hidden;
+  top: 200px;
+  right: 120px;
+  width: 24vw;
+  height: 24vh;
+}
+
+.event:hover .img-two {
+  visibility: visible;
+  transition: cubic-bezier(.04, .74, .83, .67);
+  animation-name: moveUp;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.img-three {
+  position: absolute;
+  visibility: hidden;
+  top: 360px;
+  right: 120px;
+  width: 24vw;
+  height: 24vh;
+}
+
+.eve-div2:hover .img-three {
+  visibility: visible;
+  transition: cubic-bezier(.04, .74, .83, .67);
+  animation-name: moveUp;
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.eve-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-top: 2%;
+  margin-left: 15vw;
+  margin-right: 5vw;
+}
+
+.eve-div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-top: 2%;
+  margin-left: 15vw;
+  margin-right: 5vw;
+}
+
+.eve-div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  padding-top: 2%;
+  margin-left: 15vw;
+  margin-right: 5vw;
+}
+
+.eve-name {
+  font-family: 'Fira Sans Extra Condensed';
+  font-size: 5.5vw;
+  font-weight: 600;
+}
+
+.digits {
+  float: left;
+  list-style-type: none;
+  font-size: 3.0vw;
+  line-height: 1em;
+  font-weight: 800;
+}
+
+.digits-first {
+  margin-top: -4em;
+  /* number 4! */
+}
+
+.digits-second {
+  margin-top: 0em;
+  /* number 0! */
+}
+
+.digits-third {
+  margin-top: 0em;
+  /* number 4! */
+}
+
+.digits-third {
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+#eve-counter:hover .digits-third {
+  animation-name: anim;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.digits1 {
+  float: left;
+  list-style-type: none;
+  font-size: 3.0vw;
+  line-height: 1em;
+  font-weight: 800;
+}
+
+.digits1-first {
+  margin-top: -4em;
+  /* number 4! */
+}
+
+.digits1-second {
+  margin-top: 0em;
+  /* number 0! */
+}
+
+.digits1-third {
+  margin-top: 0em;
+  /* number 4! */
+}
+
+.digits1-third {
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+#eve-div1:hover .digits1-third {
+  animation-name: anim;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.digits {
+  float: left;
+  list-style-type: none;
+  font-size: 3.0vw;
+  line-height: 1em;
+  font-weight: 800;
+}
+
+.digits-first {
+  margin-top: -4em;
+  /* number 4! */
+}
+
+.digits-second {
+  margin-top: 0em;
+  /* number 0! */
+}
+
+.digits-third {
+  margin-top: 0em;
+  /* number 4! */
+}
+
+
+.digits-third {
+  animation-name: animout;
+  animation-duration: 0.75s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+
+#eve-div2:hover .digits-third {
+  animation-name: anim;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.new-line {
+  color: black;
+  width: 75vw;
+}
+
+#eve-counter {
+  margin-bottom: auto;
+  height: 2.85vw;
+  width: 100%;
+  overflow: hidden;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(0)
+  }
+
+  to {
+    transform: translateY(-50px)
+  }
+}
+
+@keyframes animout {
+  from {
+    transform: translateY(-50px)
+  }
+
+  to {
+    transform: translateY(0)
+  }
+
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateX(120px)
+  }
+
+  to {
+    transform: translateX(10px)
+  }
+}
+
+@media screen and(max-width:949px) {
+  /* .new-block
+    {
+      z-index: 2;
+    } */
+}
+
+@media screen and (max-width:1200px) {
+  .eve-div {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width:1010px) {
+
+  .eve-name {
+    font-size: 8.5vw;
+  }
+
+  .digits {
+    font-size: 4.5vw;
+  }
+
+  #eve-counter {
+    height: 4.5vw;
+  }
+}
+
+@media screen and (max-width:678px) {
+  .eve-div {
+    margin-top: 100px;
+  }
+
+  .img-one {
+
+    display: none;
+  }
+
+  .img-two {
+
+    display: none;
+  }
+
+  .img-three {
+
+    display: none;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .new-block {
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width:470px) {
+  .new-block {
+    gap: 70px;
+  }
+
+  .eve-name {
+    font-size: 11.5vw;
+  }
+
+  #eve-counter {
+    height: 6.5vw;
+  }
+}

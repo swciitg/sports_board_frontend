@@ -5,15 +5,7 @@ import { fetchAllEventData } from '../../api/index.js'
 import Event from "./Event.js";
 
 
-const HomeEvents = () => {
-    const [data, setData] = useState([]);
-    const [isLoaded, setLoad] = useState(false);
-
-    useEffect(() => {
-        fetchAllEventData()
-            .then((res) => { setData(res.data.data); setLoad(true) })
-            .catch(setLoad(false))
-    }, [])
+const HomeEvents = ({info}) => {
 
     return (
         isLoaded ?
