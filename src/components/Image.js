@@ -4,10 +4,9 @@ function Image(props)
 {
     
     return(
-     
-        <div className="container w-80 h-80">
-        <img  src={props.image_url} />
-            <div className="top-left text-white font-medium ml-6 ">{props.name}</div>  
+        <div className="image">
+            <img src={props.image_url} style={{boxShadow:"0px 0px 20px #7BB9C4", marginRight:"17vw", width:"270px"}} className="mr-10"/>
+            <div className="top-right text-black font-medium font-sans text-[20px]">{props.name}</div>  
         </div>
     );
 }

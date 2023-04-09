@@ -1,8 +1,8 @@
 import React from 'react';
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide';
-import image1 from "../../Assests/Images/hm.png"
-import image2 from "../../Assests/Images/fullHori.svg"
-import image3 from "../../Assests/Images/hm.png"
+import image1 from "../../assets/Images/hm.png"
+import image2 from "../../assets/Images/fullHori.svg"
+import image3 from "../../assets/Images/hm.png"
 import "./Carousal.css"
 export const Carousal = (props) => {
   const options = {

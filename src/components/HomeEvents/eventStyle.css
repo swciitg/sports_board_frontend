@@ -18,6 +18,7 @@
 .another {
   display: flex;
   flex-direction: row;
+  
 }
 
 .all {
@@ -43,21 +44,21 @@
 }
 
 .img-two {
-  position: absolute;
+  position: relative;
   visibility: hidden;
-  top: 150px;
+  top: 200px;
   right: 120px;
   width: 24vw;
   height: 24vh;
 }
 
-/* .img-two:hover{
+.event:hover .img-two {
   visibility: visible;
   transition: cubic-bezier(.04, .74, .83, .67);
   animation-name: moveUp;
   animation-duration: 0.4s;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-} */
+}
 
 .img-three {
   position: absolute;
