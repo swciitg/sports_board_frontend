@@ -3,7 +3,7 @@ import  "./Loader.css"
 
 const Loader = (props) =>{
     return(
-        <div>
+        <div className="loader">
           <div className="wrapper-load">
             <span className="circle-lpad circle-1"></span>
             <span className="circle-load circle-2"></span>

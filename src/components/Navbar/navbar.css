@@ -5,7 +5,10 @@
   background-repeat: no-repeat;
   height: 100vh;
 
+
+
 }
+
 .navheader{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
   position: absolute;

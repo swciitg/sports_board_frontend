@@ -5,6 +5,7 @@ import "./clubcomp.css";
 const ClubpageComp2 = (props) => {
     return ( 
         <>
+
         <div className="cnrg_overall">
             <div className="crng_block">
                 <div className="flex flex-col pr-6 w-[90%]">
