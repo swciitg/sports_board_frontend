@@ -21,7 +21,7 @@ const ContactScreen = () => {
         {data.map((item,index)=>{
           return index%2===0?<ContactComp1 info={item}/>:<ContactComp2 info={item}/>
         })}
-        <Footer />
+        <Footer size={data.length}/>
       </div>) : 
       (<Loader/>)
       

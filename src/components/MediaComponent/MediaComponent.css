@@ -8,10 +8,15 @@
     position: sticky;
     top:0;
     z-index: 1;
-    background-color: #7BB9C4;
   }
 .Media_blockoverall::-webkit-scrollbar,.smgrid::-webkit-scrollbar{
     display: none;
+}
+.color_blue{
+  background-color: #7BB9C4;
+}
+.color_white{
+  background-color:  #f4f4f4
 }
 .Media_block{
     display: grid;

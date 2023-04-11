@@ -26,7 +26,6 @@ const HomeScreen = () => {
             .then((res) => { setEventData(res.data.data);})
             .catch(setLoad(false))
     }, [])
-
     return ( isLoaded ?
         <div>
             <Navbar 
@@ -34,22 +33,25 @@ const HomeScreen = () => {
                 slogan = {data.HomePage_Slogan}
                 carousel ={data.carousel}
             />
-            {data.Component.map((item) => 
+            {data.Component.map((item,index) => 
             <AboutUS
                 name = {item.Component_name} 
                 desc = {item.Component_data} 
                 media = {item.Component_Image.url}
+                size =  {index}
             />)}
             <HomeEvents 
                 data={eventData}
+                size ={data.Component.length}
             />
-            {data.Media_Component.map((item) =>
+            {data.Media_Component.map((item,index) =>
             <MediaComponent 
                 name={item.Component_name} 
                 desc={item.Media_Description} 
                 media={item.Images} 
+                size={data.Component.length+1+index}
             />)}
-            <Footer></Footer>
+            <Footer size={data.Component.length+1+data.Media_Component.length}></Footer>
         </div>
         : <Loader/>
     );  

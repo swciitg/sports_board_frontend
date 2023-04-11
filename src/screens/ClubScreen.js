@@ -23,13 +23,13 @@ const ClubScreen = () => {
     isLoaded ? (<div>
         <Navbar name={data.ClubName + "CLUB"} slogan={data.ClubSlogan} carousel={[data.Background_Image]}/>
         {data.Components.map((item,index) =>{
-            return <AboutUS name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url}/>
+            return <AboutUS name={item.Component_name} desc={item.Component_data} media={item.Component_Image.url} size={index}/>
         })}
         {data.Media_Components.map((item,index) =>{
-            return <MediaComponent name={item.Component_name} desc={item.Media_Description} media={item.Images} />
+            return <MediaComponent name={item.Component_name} desc={item.Media_Description} media={item.Images} size={data.Components.length+index}/>
         })}
         
-        <Footer />
+        <Footer size={data.Components.length+data.Media_Components.length}/>
        </div> ):
        (<Loader/>) 
     );  

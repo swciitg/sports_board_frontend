@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { BACKEND_URL } from "../../constants";
 import "./AboutUs.css"
 
 const AboutUS = (props) =>
-{
+{   
+    const ref = useRef()
+    useEffect(()=>{
+        if (props.size!=NaN){
+            const config = props.size;
+            config%2?ref.current.className+=" config-right":ref.current.className+=" config-left";
+        }
+      },[])
     return (
-        <div className="about-section">
+
+        <div className="about-section" ref={ref}>
      
                 <div className="about-image">
                  
