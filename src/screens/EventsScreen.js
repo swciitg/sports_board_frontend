@@ -28,7 +28,7 @@ const EventsScreen = () => {
             return (index)%2===0?<a href={BASEURL+"/events/"+item.Event_Name}><Club info={item} index={index}/></a>:<a href={BASEURL+"/events/"+item.Event_Name}><ClubBlue info={item} index={index}/></a>
           })}
           </div>
-          <Footer></Footer>
+          <Footer ></Footer>
           </div>:
           (<Loader/>) 
     );  
