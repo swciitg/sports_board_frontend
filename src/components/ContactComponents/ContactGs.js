@@ -2,7 +2,7 @@ import React from 'react'
 import { SiLinkedin } from "react-icons/si";
 import { GrMail } from "react-icons/gr";
 import { IoMdCall } from "react-icons/io";
-import "./Contact.css"
+import "./contact.css"
 import { BACKEND_URL } from '../../constants';
 const ContactComp2 = (props)=>{
     return(
