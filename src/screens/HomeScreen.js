@@ -7,7 +7,6 @@ import { fetchAllEventData } from "../api";
 import MediaComponent from "../components/MediaComponent/MediaComponent";
 import Loader from "../components/Loader/Loader";
 import AboutUS from "../components/AboutUs/AboutUs";
-import ClubpageComp2 from "../components/ClubpageComponent/ClubpageComp2";
 
 const HomeScreen = () => {
     const [data, setData] = useState("");

@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import gymkhanalogo from "../../assets/Footer/footer.png"
+import gymkhanalogo from "../../assets/Images/sports board final logo.png"
 import youTubelogo from "../../assets/Footer/YoutubeLogo.png"
 import twitterlogo from "../../assets/Footer/TwitterLogo.png"
 import instalogo from "../../assets/Footer/InstagramLogo.png"
@@ -13,18 +13,19 @@ const Footer = (props) =>
 {
 
     let size = props.size;
-    let color = "";
-    if(size & 1) color = "#7BB9C4";
-    else color = "#f4f4f4";
-
+    let color = "";let textColor = "";
+    if(size & 1) {color = "#303030"; textColor="#f4f4f4"}
+    else {
+        color = "#f4f4f4";
+    }
     return (
         <div id="footer-container"  className="flex flex-row" style={{backgroundColor: color}}>
             <div id="students-ghymkhana-council" className="flex">
-                <div className="ghymkhana-logo "><img  src={gymkhanalogo} alt=""/></div>
+                <div className="ghymkhana-logo "><img  src={gymkhanalogo}  style={{height:"25vh"}} alt=""/></div>
                 <div className="flex flex-col flex-wrap items-start justify-start">
-                    <div className="ghymkhana-details flex flex-col flex-wrap items-start justify-start gap-1  ">
+                    <div className="ghymkhana-details flex flex-col flex-wrap items-start justify-start gap-1  " style={{color: textColor}}>
                         <div id="heading">
-                            <h1 className="text-2xl font-extrabold ">STUDENTS GYMKHANA</h1>
+                            <h1 className="text-2xl font-extrabold " style={{color: textColor}}>STUDENTS GYMKHANA</h1>
                             <h1 className=" text-2xl   font-extrabold">COUNCIL</h1>
                         </div>
                         <div id="details">
@@ -41,8 +42,8 @@ const Footer = (props) =>
                 
                 </div>
             </div>
-            <div id="students-web-committee" className=" flex flex-col   gap-2">
-                <div id="swc-details" className="flex flex-row  ">
+            <div id="students-web-committee" className=" flex flex-col   gap-2" style={{color: textColor}}>
+                <div id="swc-details" className="flex flex-row  " >
                     <div>
                         <img  className="h-16 w-16" src={SWCLogo} alt=""></img>
                     </div>
