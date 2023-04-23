@@ -23,9 +23,9 @@ const ContactComp2 = (props)=>{
                                {props.info.Name} <br/>{props.info.Department}<br/><br/>"{props.info.Slogan}"<br/><br/> 
                        </div>
                        <div className='icons'>
-                                   <a href={"tel:"+props.info.Phone_Num} className='ico2'><IoMdCall size={50}/></a>
-                                   <a href={"mailto:"+props.info.Mail_ID} className='ico2'><GrMail size={50}/></a>
-                                   <a href={props.info.Linkedin_ID} className='ico2'><SiLinkedin size={50}/></a>
+                                   <a href={"tel:"+props.info.Phone_Num} className='ico2' style={{color:"#f4f4f4"}}><IoMdCall size={50}/></a>
+                                   <a href={"mailto:"+props.info.Mail_ID} className='ico2' style={{color:"#f4f4f4"}}><GrMail size={50}/></a>
+                                   <a href={props.info.Linkedin_ID} className='ico2' style={{color:"#f4f4f4"}}><SiLinkedin size={50}/></a>
                        </div>
        
                </div>

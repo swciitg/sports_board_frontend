@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import gymkhanalogo from "../../assets/Footer/footer.png"
+import gymkhanalogo from "../../assets/Images/sports board final logo.png"
 import youTubelogo from "../../assets/Footer/YoutubeLogo.png"
 import twitterlogo from "../../assets/Footer/TwitterLogo.png"
 import instalogo from "../../assets/Footer/InstagramLogo.png"
@@ -21,7 +21,7 @@ const Footer = (props) =>
     return (
         <div id="footer-container"  className="flex flex-row" style={{backgroundColor: color}}>
             <div id="students-ghymkhana-council" className="flex">
-                <div className="ghymkhana-logo "><img  src={gymkhanalogo} alt=""/></div>
+                <div className="ghymkhana-logo "><img  src={gymkhanalogo}  style={{height:"25vh"}} alt=""/></div>
                 <div className="flex flex-col flex-wrap items-start justify-start">
                     <div className="ghymkhana-details flex flex-col flex-wrap items-start justify-start gap-1  " style={{color: textColor}}>
                         <div id="heading">

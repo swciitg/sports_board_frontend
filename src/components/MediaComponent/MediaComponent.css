@@ -71,7 +71,7 @@
  } */
 
  @media screen and (min-width: 600px ){
-    .btn{
+    .btn,.btn-white{
       transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
       color: #000;
       text-transform: uppercase;
@@ -91,7 +91,11 @@
       position: relative;
       z-index: 2; 
   }
-  .btn::before {
+  .btn-white{
+    color: white;
+    border: 1px solid white;
+  }
+  .btn::before,.btn-white::before {
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
     background: black;
     position: absolute;
@@ -104,7 +108,10 @@
     z-index: -1;
     clip-path: polygon(0% 0%,0% 100%,35% 100%,35% 25%,70% 50%,25% 80%,0% 85%,31% 100%,100% 100%,100% 0%);
   }
-  .btn:after{
+  .btn-white::before{
+    background: white;
+  }
+  .btn:after,.btn-white:after{
     position: absolute;
     content: "";
     top: 0px;
@@ -116,15 +123,20 @@
     transition: all 0.75s;
     z-index: -2;
   }
-  
+  .btn-white:after{
+    background: white;
+  }
   .btn:hover{
     color: #fff;
   }
-  
-  .btn:hover:after{
+  .btn-white:hover{
+    color:black
+  }
+  .btn:hover:after,.btn-white:hover:after{
     width: 75%;
     height: 100%;
   }
+
   }
   .gridimg{
     padding:10px 10px 10px;
@@ -142,7 +154,7 @@
       column-gap: 30px;  
   }
   @media screen and (max-width: 600px ){
-    .btn{
+    .btn,.btn-white{
       transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
       color: #000;
       text-transform: uppercase;
@@ -162,7 +174,11 @@
       position: relative;
       z-index: 2; 
   }
-  .btn::before {
+  .btn-white{
+    color: white;
+    border: 1px solid white;
+  }
+  .btn::before,.btn-white::before {
     transition: all 2s cubic-bezier(0.68,-0.55 0.265,1.55);
     background: black;
     position: absolute;
@@ -175,7 +191,10 @@
     z-index: -1;
     clip-path: polygon(0% 0%,0% 100%,35% 100%,35% 25%,70% 50%,25% 80%,0% 85%,31% 100%,100% 100%,100% 0%);
   }
-  .btn:after{
+  .btn-white::before{
+    background: white;
+  }
+  .btn:after,.btn-white:after{
     position: absolute;
     content: "";
     top: 0px;
@@ -187,12 +206,16 @@
     transition: all 0.75s;
     z-index: -2;
   }
-  
+  .btn-white:after{
+    background: white;
+  }
   .btn:hover{
     color: #fff;
   }
-  
-  .btn:hover:after{
+  .btn-white:hover{
+    color: #000;
+  }
+  .btn:hover:after,.btn-white:hover:after{
     width: 75%;
     height: 100%;
   }

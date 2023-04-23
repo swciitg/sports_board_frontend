@@ -12,8 +12,13 @@ const MediaComponent = (props)=>{
     const refmain2 = useRef()
     const {pathname}=useLocation();
     let textColor="";
+    let btnclass="";
     let size = props.size;
-    if(size & 1) { textColor="#f4f4f4"}
+    if(size & 1) { textColor="#f4f4f4";btnclass="btn-white";
+    }
+    else{
+        btnclass="btn"
+    }
     useEffect(()=>{
       if(pathname==="/"){
         
@@ -41,7 +46,7 @@ const MediaComponent = (props)=>{
                                     {props.desc}
                                 </p>
                                 <div className="firm-btn" ref={ref}>
-                                    <a href="sports_board/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
+                                    <a href="sports_board/clubs" className={btnclass}style={{textDecoration:"none"}}> Know More </a>
                                 </div>
                             </div>
                     </div>
@@ -65,9 +70,9 @@ const MediaComponent = (props)=>{
         </div>
         <div className="smMedia_blockoverall" ref={refmain2}>
             <div className="smMedia_block" >
-                <div className="head_about max-sm:text-6xl">{props.name}</div>
+                <div className="head_about max-sm:text-6xl" style={{color:textColor}}>{props.name}</div>
                 <div>
-                    <p className="para_about">
+                    <p className="para_about" style={{color:textColor}}>
                             {props.desc}
                     </p>
                 </div>
@@ -79,7 +84,7 @@ const MediaComponent = (props)=>{
             </div>
             <div>
               <div className="smfirm-btn" ref={ref1}>
-                  <a href="sports_board/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
+                  <a href="sports_board/clubs" className={btnclass} style={{textDecoration:"none"}}> Know More </a>
               </div>
             </div>
         </div>
