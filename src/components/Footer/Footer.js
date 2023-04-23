@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./footer.css";
 import gymkhanalogo from "../../assets/Footer/footer.png"
 import youTubelogo from "../../assets/Footer/YoutubeLogo.png"
 import twitterlogo from "../../assets/Footer/TwitterLogo.png"
