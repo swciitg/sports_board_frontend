@@ -4,7 +4,7 @@ services:
   frontend: # Name of our service
     build: . # path to dockerfile
     ports: # Port binding to host from docker container
-      - "3016:3000" # Bind port 3000 of host to 3000 of container
+      - "3017:3000" # Bind port 3000 of host to 3000 of container
     container_name: sportsBoard-frontend
     restart: always # What to do if container crashes
   # Create backend container
