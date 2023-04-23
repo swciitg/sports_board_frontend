@@ -11,6 +11,9 @@ const MediaComponent = (props)=>{
     const refmain1 = useRef()
     const refmain2 = useRef()
     const {pathname}=useLocation();
+    let textColor="";
+    let size = props.size;
+    if(size & 1) { textColor="#f4f4f4"}
     useEffect(()=>{
       if(pathname==="/"){
         
@@ -32,13 +35,13 @@ const MediaComponent = (props)=>{
         <div className="Media_blockoverall" ref={refmain1}>
             <div className="Media_block" >
                     <div className="containerteam1">
-                            <div className="containerteam2">
-                                <div className="head_about">{props.name}</div>
+                            <div className="containerteam2" style={{color:textColor}}>
+                                <div className="head_about" style={{color:textColor}}>{props.name}</div>
                                 <p className="para_about">
                                     {props.desc}
                                 </p>
                                 <div className="firm-btn" ref={ref}>
-                                    <a href="/clubs" className="btn" style={{textDecoration:"none"}}> Know More </a>
+                                    <a href="/clubs" className="btn" style={{textDecoration:"none"}} > Know More </a>
                                 </div>
                             </div>
                     </div>

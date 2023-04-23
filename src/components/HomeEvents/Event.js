@@ -6,7 +6,9 @@ const Event = ({event, id}) =>
 {
     let props = {event, id};
     let eventImage = "event-image"+props.id;
-
+    let textColor="";
+    let size = props.size;
+    if(size & 1) { textColor="#f4f4f4"}
     return (
         <>
             
@@ -16,7 +18,7 @@ const Event = ({event, id}) =>
                     <ul  class="digits"> <li> {props.id} </li><li> {props.id} </li> </ul>
                 </div>
                 <div className="event-name-image">
-                    <div className="event-name">{event.Event_Name}</div>
+                    <div className="event-name" style={{color:textColor}}>{event.Event_Name}</div>
                     <div className={eventImage} >
                         <Image name={props.event.Event_Name} image_url={BACKEND_URL + props.event.Thumbnail_Image.formats.thumbnail.url}></Image>
                     </div>

@@ -17,9 +17,9 @@ const ContactComp2 = (props)=>{
                </div>
                <div className='details'>
                        <div className='post'
-                         style={{margin:"10px"}}>{props.info.Position_Name}
+                         style={{margin:"10px",color:"#f4f4f4"}}>{props.info.Position_Name}
                        </div>
-                       <div className='post-details'>
+                       <div className='post-details'style={{color:"#f4f4f4"}}>
                                {props.info.Name} <br/>{props.info.Department}<br/><br/>"{props.info.Slogan}"<br/><br/> 
                        </div>
                        <div className='icons'>

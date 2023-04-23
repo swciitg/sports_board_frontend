@@ -41,7 +41,7 @@
 }
 
 .find{
-  background-image: url('../../assets/Images/logo_sportsboard.jpg');  
+  background-image: url('../../assets/Images/sports\ board\ final\ logo.png');  
   position: relative;
   width: 86px;
   height: 92px;
@@ -146,7 +146,7 @@ color: #FFFFFF;
   width:100%;
   height: 100%;
   }
-.logosm{ background-image: url('../../assets/Images/logo_sportsboard.jpg');  
+.logosm{ background-image: url('../../assets/Images/sports\ board\ final\ logo.png');  
     background-size: 75px 80px;
     position: relative;
     background-repeat: no-repeat;
