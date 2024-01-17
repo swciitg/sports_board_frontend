@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed&family=Inter&display=swap');
 
-.sports-event {
+.cult-event {
   /* overflow-x: hidden; */
   width: 100%;
   height: 100vh;
@@ -27,7 +27,7 @@
   width: 100%;
 }
 
-.sports-event-detail {
+.cult-event-detail {
   display: flex;
   flex-direction: column;
   margin-left: 5vw;

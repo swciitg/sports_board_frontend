@@ -1,8 +1,8 @@
 {
-  "name": "sports_board_frontend",
+  "name": "cult_board_frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/sports_board/",
+  "homepage": "/cult_board/",
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "@testing-library/jest-dom": "^5.16.5",
