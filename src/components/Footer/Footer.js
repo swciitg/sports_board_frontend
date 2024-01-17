@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.css";
-import gymkhanalogo from "../../assets/Images/cult board final logo.png"
+import gymkhanalogo from "../../assets/Images/sports board final logo.png"
 import youTubelogoB from "../../assets/Footer/YoutubeLogo_B.png"
 import youTubelogoW from "../../assets/Footer/YoutubeLogo_W.png"
 import twitterlogoB from "../../assets/Footer/TwitterLogo_B.png"
@@ -47,9 +47,9 @@ const Footer = (props) =>
                         <p align="left"  className="text-sm">+91 -361-258162<br/>sgc@iitg.ac.in</p>
                         </div>
                         <div id="social-media-links" className="flex flex-row pt-3  ">
-                        <a href="https://www.youtube.com/@cultboardiitguwahati"><img  className="h-8 w-8" src={youTube} alt=""/></a>
+                        <a href="https://www.youtube.com/@sportsboardiitguwahati"><img  className="h-8 w-8" src={youTube} alt=""/></a>
                         <a href="https://twitter.com/IITGuwahati"><img  className="h-8 w-8" src={twitter} alt=""/></a>
-                        <a href="https://instagram.com/cult_iit_guwahati?igshid=YmMyMTA2M2Y="><img   className="h-8 w-8" src={insta} alt=""/></a>
+                        <a href="https://instagram.com/sports_iit_guwahati?igshid=YmMyMTA2M2Y="><img   className="h-8 w-8" src={insta} alt=""/></a>
                         <a href="https://www.linkedin.com/school/iitg/"><img  className="h-8 w-8" src={linkedIn} alt="" /> </a>
                     </div>
                     </div>
