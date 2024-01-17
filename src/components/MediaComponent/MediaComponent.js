@@ -46,7 +46,7 @@ const MediaComponent = (props)=>{
                                     {props.desc}
                                 </p>
                                 <div className="firm-btn" ref={ref}>
-                                    <a href="sports_board/clubs" className={btnclass}style={{textDecoration:"none"}}> Know More </a>
+                                    <a href="welfare_board/clubs" className={btnclass}style={{textDecoration:"none"}}> Know More </a>
                                 </div>
                             </div>
                     </div>
@@ -84,7 +84,7 @@ const MediaComponent = (props)=>{
             </div>
             <div>
               <div className="smfirm-btn" ref={ref1}>
-                  <a href="sports_board/clubs" className={btnclass} style={{textDecoration:"none"}}> Know More </a>
+                  <a href="welfare_board/clubs" className={btnclass} style={{textDecoration:"none"}}> Know More </a>
               </div>
             </div>
         </div>
